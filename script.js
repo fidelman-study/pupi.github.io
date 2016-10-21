@@ -31,7 +31,8 @@
 	$('#content .block').click(function() {
 		swal({
 			title: this.dataset.title,
-			text: this.dataset.text
+			text: this.dataset.text,
+			imageUrl: this.dataset.img
 		})
 	});
 

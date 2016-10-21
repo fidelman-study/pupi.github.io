@@ -65,3 +65,8 @@ section {
 	font-family: Sacramento;
 	font-size: 50px !important;
 }
+.sweet-alert .sa-icon.sa-custom {
+	border-radius: 100% !important;
+	height: 180px !important;
+	width: 180px !important;
+}
