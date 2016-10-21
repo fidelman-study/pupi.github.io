@@ -12,6 +12,7 @@
 
 body {
 	margin: 0;
+	overflow: hidden;
 }
 
 section {
@@ -48,6 +49,11 @@ section {
 	color: #8bc34a;
 }
 
+video {
+	position: absolute;
+    opacity: 0.5;
+    width: 100%;
+}
 
 #content {
 	display: flex;
