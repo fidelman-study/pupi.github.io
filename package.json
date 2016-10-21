@@ -4,6 +4,7 @@
   "description": "birthday's Karina",
   "main": "index.html",
   "dependencies": {
+    "sweetalert": "^1.1.3"
   },
   "devDependencies": {},
   "scripts": {
