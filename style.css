@@ -1,3 +1,10 @@
+@font-face {
+    font-family: Sacramento;
+    src: url(Sacramento/Sacramento-Regular.ttf);
+  }
+
+
+
 body {
 	margin: 0;
 }
@@ -30,8 +37,14 @@ section {
 	height: 250px;
 	width: 250px;
 	border-radius: 100%;
-	background: red;
-	box-shadow: 0 0 0px rgba(0,0,0, .8), inset 0 2px 0 rgba(255,255,255,.4), 0 2px 0 rgba(0,0,0,.1), inset 0 0 20px rgba(0,0,0,.1);
+	text-align: center;
+}
+
+#content .block span {
+	line-height: 250px;
+	font-family: Sacramento, Arial;
+	font-size: 60px;
+	color: red;
 }
 
 #content .block:first-child,
