@@ -1,6 +1,50 @@
 (function(){
 
 
+	var imgs = [
+		{
+			imgUrl: 'images/karina/karina1.png',
+			text: 'forever'
+		},
+		{
+			imgUrl: 'images/karina/karina2.png',
+			text: 'glorious'
+		},
+		{
+			imgUrl: 'images/karina/karina3.png',
+			text: 'timeless'
+		},
+		{
+			imgUrl: 'images/karina/karina4.png',
+			text: 'lovely'
+		},
+		{
+			imgUrl: 'images/karina/karina5.png',
+			text: 'honey'
+		},
+		{
+			imgUrl: 'images/karina/karina6.png',
+			text: 'sweetie'
+		},
+		{
+			imgUrl: 'images/karina/karina7.png',
+			text: 'princess'
+		},
+		{
+			imgUrl: 'images/karina/karina8.png',
+			text: 'angel'
+		},
+		{
+			imgUrl: 'images/karina/karina9.png',
+			text: 'spectacular'
+		},
+		{
+			imgUrl: 'images/karina/karina10.png',
+			text: 'awesome'
+		}
+	];
+
+
 	var boxShadowProps = {
 		value: 0,
 		increment: true,
@@ -47,6 +91,20 @@
 		}
 		
 	});
+
+
+	var imgId = 0;
+	setInterval(function() {
+
+		$('#img img').attr('src', imgs[imgId].imgUrl);
+		$('#img span').text(imgs[imgId].text);
+		
+		if(imgId == 9) {
+			imgId = 0;
+		} else {
+			imgId++
+		}
+	}, 3000);
 
 
 

@@ -1,7 +1,12 @@
 @font-face {
     font-family: Sacramento;
-    src: url(Sacramento/Sacramento-Regular.ttf);
-  }
+    src: url(fonts/Sacramento/Sacramento-Regular.ttf);
+}
+
+@font-face {
+    font-family: Neucha;
+    src: url(fonts/neucha_regular.otf);
+}
 
 
 
@@ -18,6 +23,7 @@ section {
 
 #img {
 	text-align: center;
+	position: relative;
 }
 
 #img img {
@@ -26,6 +32,22 @@ section {
 	border-radius: 100%;
 	cursor: pointer;
 }
+
+#img .text_block {
+	position: absolute;
+	width: 100%;
+	height: 50px;
+	background: white;
+	bottom: 65px;
+}
+
+#img .text_block span {
+	font-family: Neucha;
+	font-size: 40px;
+	line-height: 50px;
+	color: #8bc34a;
+}
+
 
 #content {
 	display: flex;
