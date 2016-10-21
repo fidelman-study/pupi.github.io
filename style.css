@@ -54,6 +54,7 @@ section {
 	justify-content: space-around;
 	flex-flow: row;
 	flex-wrap: wrap;
+	animation: fadeIn 3s;
 }
 
 #content .block {
@@ -67,7 +68,7 @@ section {
 
 #content .block:hover {
 	opacity: 1;
-	transition: opacity 0.5s ease-in;
+	transition: opacity 0.3s ease-in;
 }
 
 #content .block span {
@@ -101,4 +102,15 @@ section {
 
 .sweet-alert button {
 	background-color: #8bc34a !important;
+}
+
+@keyframes fadeIn {
+	from {
+		transform: translateY(-200px);
+		opacity: 0;
+	}
+	to {
+		transform: translateY
+		opacity: .5;
+	}
 }
