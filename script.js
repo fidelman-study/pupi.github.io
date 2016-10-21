@@ -13,7 +13,7 @@
 
 		if (!boxShadowProps.value) {
 			boxShadowProps.increment = true;
-		} else if(boxShadowProps.value === 150) {
+		} else if(boxShadowProps.value === 100) {
 			boxShadowProps.increment = false;
 		}
 
