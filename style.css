@@ -1,0 +1,40 @@
+body {
+	margin: 0;
+}
+
+section {
+	display: flex;
+	justify-content: space-around;
+	flex-flow: column;
+	height: 100vh;
+}
+
+#img {
+	text-align: center;
+}
+
+#img img {
+	height: 400px;
+	width: 400px;
+	border-radius: 100%;
+}
+
+#content {
+	display: flex;
+	justify-content: space-around;
+	flex-flow: row;
+	flex-wrap: wrap;
+}
+
+#content .block {
+	height: 250px;
+	width: 250px;
+	border-radius: 100%;
+	background: red;
+	box-shadow: 0 0 0px rgba(0,0,0, .8), inset 0 2px 0 rgba(255,255,255,.4), 0 2px 0 rgba(0,0,0,.1), inset 0 0 20px rgba(0,0,0,.1);
+}
+
+#content .block:first-child,
+#content .block:last-child {
+	transform: translateY(-150px);
+}
