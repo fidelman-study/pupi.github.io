@@ -93,3 +93,12 @@ section {
 	height: 180px !important;
 	width: 180px !important;
 }
+
+.sweet-alert p {
+	font-family: Neucha;
+	font-size: 25px !important;
+}
+
+.sweet-alert button {
+	background-color: #8bc34a !important;
+}
