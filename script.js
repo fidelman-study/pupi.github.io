@@ -36,6 +36,18 @@
 		})
 	});
 
+	$('#img img').click(function() {
+		var audio = $('audio').get(0);
+		if(audio.dataset.play == 'true') {
+			audio.pause();
+			audio.dataset.play = 'false'
+		} else {
+			audio.play();
+			audio.dataset.play = 'true'
+		}
+		
+	});
+
 
 
 
