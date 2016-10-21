@@ -42,13 +42,22 @@
 			imgUrl: 'images/karina/karina10.png',
 			text: 'awesome'
 		}
+		,
+		{
+			imgUrl: 'images/karina/karina11.png',
+			text: 'world'
+		}
+		,
+		{
+			imgUrl: 'images/karina/karina12.png',
+			text: 'dream'
+		}
 	];
 
 
 	var boxShadowProps = {
 		value: 0,
-		increment: true,
-		colorAlpha: 0.8
+		increment: true
 	};
 
 		
@@ -69,7 +78,7 @@
 
 		
 
-		$('#content .block').css('boxShadow', '0 0 ' + boxShadowProps.value + 'px rgba(255,0,0, ' + boxShadowProps.colorAlpha + '), inset 0 2px 0 rgba(255,255,255,.4), 0 2px 0 rgba(0,0,0,.1), inset 0 0 20px rgba(0,0,0,.1)');
+		$('#content .block').css('boxShadow', '0 0 ' + boxShadowProps.value + 'px rgba(255,0,0,0.8), inset 0 2px 0 rgba(255,255,255,.4), 0 2px 0 rgba(0,0,0,.1), inset 0 0 20px rgba(0,0,0,.1)');
 	}, 50);
 
 	$('#content .block').click(function() {
@@ -98,8 +107,8 @@
 
 		$('#img img').attr('src', imgs[imgId].imgUrl);
 		$('#img span').text(imgs[imgId].text);
-		
-		if(imgId == 9) {
+
+		if(imgId == 11) {
 			imgId = 0;
 		} else {
 			imgId++
