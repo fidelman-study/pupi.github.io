@@ -90,10 +90,22 @@ video {
 	color: red;
 }
 
-#content .block:first-child,
-#content .block:last-child {
-	transform: translateY(-150px);
+
+
+@media only screen and (min-width: 1000px) {
+	#content .block:first-child,
+	#content .block:last-child {
+		transform: translateY(-150px);
+	}
 }
+
+@media only screen and (max-width: 1000px) {
+	video {
+		display: none;
+	}
+}
+
+	
 
 /* change sweet alert default styles */
 
