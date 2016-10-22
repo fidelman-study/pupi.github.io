@@ -85,7 +85,8 @@
 		swal({
 			title: this.dataset.title,
 			text: this.dataset.text,
-			imageUrl: this.dataset.img
+			imageUrl: this.dataset.img,
+			confirmButtonText: "I'm mad about you ❤️"
 		})
 	});
 
